@@ -37,7 +37,6 @@ jobs:
       # Get inputs from workflow_dispatch
       - name: Print workflow inputs
         run: |
-          echo "Branch: ${{ inputs.branch }}"
           echo "Run tests: ${{ inputs.run-tests }}"
           echo "Test type: ${{ inputs.test-type }}"
           echo "Environment: ${{ inputs.environment }}"
